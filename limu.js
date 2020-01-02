@@ -41,6 +41,7 @@ const ADD_UMBRELLA_BACKGROUND = (callback) => {
     LOADED(SCRIPT, callback);
     document.body.appendChild(SCRIPT);
 };
+
 // 移除 README.md
 const REMOVE_README = () => {
     const TBODY = document.querySelector('#list-table').querySelector('tbody');
