@@ -41,28 +41,6 @@ const ADD_UMBRELLA_BACKGROUND = (callback) => {
     LOADED(SCRIPT, callback);
     document.body.appendChild(SCRIPT);
 };
-
-const ADD_IMGAGE_BACKGROUND = () => {
-    const IMAGE = 'url(https://img12.360buyimg.com/img/jfs/t1/56992/25/15607/359235/5dc93624E8223dc25/41cac0ada12d3ad9.jpg)'
-    const DIV = document.createElement('div');
-    DIV.style.background = IMAGE;
-    DIV.style.pointerEvents = 'none';
-    DIV.style.backgroundRepeat = 'no-repeat';
-    DIV.style.backgroundSize = 'cover';
-    DIV.style.position = 'fixed';
-    DIV.style.left = '0';
-    DIV.style.top = '0';
-    DIV.style.width = '100%';
-    DIV.style.height = '100%';
-    DIV.style.filter = 'blur(2px)';
-    DIV.style.msFilter = 'blur(2px)';
-    DIV.style.webkitFilter = 'blur(2px)';
-    DIV.style.mozFilter = 'blur(2px)';
-    DIV.style.oFilter = 'blur(2px)';
-    DIV.style.opacity = '0.2';
-    document.body.appendChild(DIV);
-};
-
 // 移除 README.md
 const REMOVE_README = () => {
     const TBODY = document.querySelector('#list-table').querySelector('tbody');
